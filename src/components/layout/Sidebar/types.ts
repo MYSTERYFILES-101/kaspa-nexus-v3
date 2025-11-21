@@ -11,6 +11,7 @@ export interface NavigationItem {
 
 export interface NavigationSection {
   title: string;
+  icon?: ReactNode;
   items: NavigationItem[];
   collapsed?: boolean;
   pro?: boolean;
