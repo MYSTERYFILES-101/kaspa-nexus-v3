@@ -31,21 +31,21 @@ export const NavigationSection: React.FC<NavigationSectionProps> = ({
 
   return (
     <div className="space-y-2">
-      {/* Section Header */}
+      {/* Section Header - BOLD & LARGER */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold text-neutral-600 dark:text-neutral-500 uppercase tracking-wider hover:text-brand-primary transition-colors"
+        className="w-full flex items-center justify-between px-3 py-3 text-sm font-bold text-neutral-800 dark:text-neutral-300 uppercase tracking-wide hover:text-brand-primary transition-colors"
       >
-        <div className="flex items-center gap-2">
-          {section.icon && <span>{section.icon}</span>}
-          <span>{section.title}</span>
+        <div className="flex items-center gap-2.5">
+          {section.icon && <span className="text-xl">{section.icon}</span>}
+          <span className="text-[13px] leading-tight">{section.title}</span>
           {section.pro && <Badge variant="pro" size="sm">PRO</Badge>}
         </div>
 
         {/* Expand/Collapse Icon */}
         <svg
           className={cn(
-            "w-4 h-4 transition-transform duration-200",
+            "w-5 h-5 transition-transform duration-200",
             isExpanded && "rotate-180"
           )}
           fill="none"

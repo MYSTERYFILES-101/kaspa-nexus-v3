@@ -9,18 +9,17 @@ import { NavigationSection } from "./NavigationSection";
 import { UserProfile } from "./UserProfile";
 import type { SidebarProps, NavigationSection as NavSection, UserStatus } from "./types";
 
-// Navigation configuration - According to Project Plan
+// Navigation configuration - Correct Structure
 const navigationSections: NavSection[] = [
   {
     title: "Dashboard",
     icon: "📊",
+    collapsed: false,
     items: [
       { label: "Kaspa-Nexus (Main)", href: "/dashboard/main", icon: "🏠" },
       { label: "KRC-20 Netzwerk", href: "/dashboard/krc20", icon: "🌐" },
       { label: "Signal Dashboard", href: "/dashboard/signal", icon: "📈", badge: "pro" },
       { label: "Investment Hub", href: "/dashboard/investment", icon: "💰" },
-      { label: "Account & Shop", href: "/dashboard/account", icon: "🛒" },
-      { label: "Team & Info", href: "/dashboard/team", icon: "ℹ️" },
     ],
   },
   {
