@@ -1,4 +1,4 @@
-// v1.0.2 - Navigation Item Component
+// v1.0.3 - Navigation Item Component (Dark Theme)
 "use client";
 
 import React from "react";
@@ -22,9 +22,9 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({ item, collapsed 
       href={item.href}
       className={cn(
         "group flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
-        "hover:bg-brand-light dark:hover:bg-neutral-700",
-        isActive && "bg-brand-primary text-white hover:bg-brand-primary dark:hover:bg-brand-primary",
-        !isActive && "text-neutral-700 dark:text-neutral-300",
+        "hover:bg-neutral-800/50",
+        isActive && "bg-brand-primary/20 text-brand-primary border border-brand-primary/30 hover:bg-brand-primary/30",
+        !isActive && "text-neutral-300 hover:text-white",
         collapsed && "justify-center"
       )}
       title={collapsed ? item.label : undefined}

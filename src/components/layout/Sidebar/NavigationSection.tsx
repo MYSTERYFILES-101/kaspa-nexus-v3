@@ -1,4 +1,4 @@
-// v1.0.2 - Navigation Section Component
+// v1.0.3 - Navigation Section Component (Dark Theme)
 "use client";
 
 import React, { useState } from "react";
@@ -34,7 +34,7 @@ export const NavigationSection: React.FC<NavigationSectionProps> = ({
       {/* Section Header */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider hover:text-brand-primary transition-colors"
+        className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold text-neutral-500 uppercase tracking-wider hover:text-brand-primary transition-colors"
       >
         <div className="flex items-center gap-2">
           <span>{section.title}</span>
