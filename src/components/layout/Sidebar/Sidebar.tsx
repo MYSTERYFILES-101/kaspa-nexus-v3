@@ -1,4 +1,4 @@
-// v1.0.4 - Sidebar Navigation Component (Correct Structure from Project Plan)
+// v1.0.5 - Sidebar Navigation Component (Fixed Dashboard + Visual Hierarchy)
 "use client";
 
 import React, { useState } from "react";
@@ -160,7 +160,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {!collapsed && (
         <div className="px-4 pb-4 pt-2">
           <div className="text-center text-2xs text-neutral-500 dark:text-neutral-500">
-            Version 1.0.4 • <span className="text-brand-primary font-semibold">Development</span>
+            Version 1.0.5 • <span className="text-brand-primary font-semibold">Development</span>
           </div>
         </div>
       )}
