@@ -1,4 +1,4 @@
-# 🧪 KASPA-NEXUS v1.0.3 - Testing Guide
+# 🧪 KASPA-NEXUS v1.0.4 - Testing Guide
 
 ## ✅ SERVER STATUS
 
@@ -59,21 +59,24 @@ http://138.199.206.199/dashboard/main
 ### On Homepage (`/`):
 - ✅ KASPA-NEXUS Logo (large, centered)
 - ✅ Purple/Blue gradient background
-- ✅ "Version 1.0.3" badge
+- ✅ "Version 1.0.4" badge
 - ✅ 3 Feature cards
 - ✅ "Get Started" and "Learn More" buttons
 
 ### On Dashboard (`/dashboard/main`):
-- ✅ **Left Sidebar (NEW Dark Theme!):**
-  - KASPA-NEXUS logo with dark gradient background
-  - 4 Navigation sections:
-    * Main (Dashboard, KRC-20 Network)
-    * Ecosystem (Coins, DEX, NFT, Gaming, Infrastructure)
-    * Pro Features (AI Signals, Analytics, Portfolio, Calculator)
-    * Account (Settings, Upgrade, Team Info)
-  - Active items have blue glow effect
+- ✅ **Left Sidebar (Korrekte Struktur laut Projektplan!):**
+  - KASPA-NEXUS logo (weiß im Light Mode, dunkel im Dark Mode)
+  - 6 Navigation Bereiche mit eigenen Dashboards:
+    * 📊 Dashboard (Dropdown mit 6 Unterseiten)
+    * 🌐 Ecosystem (5 Kategorien)
+    * 📈 Signal Dashboard (Pro)
+    * 💰 Investment Hub
+    * 🛒 Account & Shop
+    * ℹ️ Team & Info
+  - Active items haben blauen Glow-Effekt
   - User profile at bottom (Demo User - Free badge)
   - Collapse toggle button
+  - Dark Mode Toggle im Header funktioniert!
 
 - ✅ **Top Header:**
   - Mobile menu button (hamburger)
@@ -180,5 +183,5 @@ Features to test:
 ---
 
 **Status:** ✅ Server is LIVE and READY
-**Version:** 1.0.3 (Dark Theme Sidebar)
+**Version:** 1.0.4 (Korrekte Navigation + Light/Dark Theme)
 **Last Updated:** November 21, 2025
