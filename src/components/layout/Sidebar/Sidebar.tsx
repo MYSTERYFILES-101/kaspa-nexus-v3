@@ -37,7 +37,6 @@ const navigationSections: NavSection[] = [
   {
     title: "Signal Dashboard",
     icon: "📈",
-    pro: true,
     collapsed: false,
     items: [
       { label: "AI Signals", href: "/signals/ai-signals", icon: "🤖", badge: "pro" },
