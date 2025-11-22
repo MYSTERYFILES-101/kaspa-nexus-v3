@@ -1,4 +1,5 @@
-// v1.0.2 - Main Dashboard Page
+// v1.0.7 - Main Dashboard Page - Complete Redesign
+import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
@@ -6,230 +7,363 @@ import { Button } from "@/components/ui/Button";
 export default function MainDashboard() {
   return (
     <div className="space-y-8">
-      {/* Page Header */}
-      <div>
-        <h1 className="text-3xl font-bold text-neutral-900 dark:text-white mb-2">
-          Welcome to KASPA-NEXUS 3.0
-        </h1>
-        <p className="text-neutral-600 dark:text-neutral-400">
-          Your gateway to the Kaspa KRC-20 Ecosystem
-        </p>
+      {/* Hero Banner */}
+      <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+        <Image
+          src="/images/Kaspa-Nexus-Banner.png"
+          alt="KASPA-NEXUS 3.0"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        <div className="absolute bottom-8 left-8 right-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+            KASPA-NEXUS 3.0
+          </h1>
+          <p className="text-xl text-white/90">
+            Your Gateway to the Kaspa KRC-20 Ecosystem
+          </p>
+        </div>
       </div>
 
-      {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card hover>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-                  Total Users
-                </p>
-                <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
-                  1,234
-                </p>
-                <p className="text-xs text-success mt-1">+12.5% from last month</p>
-              </div>
-              <div className="p-3 bg-brand-light dark:bg-brand-dark/20 rounded-full">
-                <svg className="w-6 h-6 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card hover>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-                  Active Signals
-                </p>
-                <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
-                  42
-                </p>
-                <p className="text-xs text-info mt-1">5 new today</p>
-              </div>
-              <div className="p-3 bg-success-light dark:bg-success-dark/20 rounded-full">
-                <svg className="w-6 h-6 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card hover>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-                  Win Rate
-                </p>
-                <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
-                  87.3%
-                </p>
-                <p className="text-xs text-success mt-1">Above target</p>
-              </div>
-              <div className="p-3 bg-warning-light dark:bg-warning-dark/20 rounded-full">
-                <svg className="w-6 h-6 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card hover>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
-                  KRC-20 Tokens
-                </p>
-                <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
-                  156
-                </p>
-                <p className="text-xs text-info mt-1">Tracked live</p>
-              </div>
-              <div className="p-3 bg-info-light dark:bg-info-dark/20 rounded-full">
-                <svg className="w-6 h-6 text-info" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Latest Signals */}
-        <Card>
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <div>
-                <CardTitle>Latest Signals</CardTitle>
-                <CardDescription>AI-generated trading signals</CardDescription>
-              </div>
-              <Badge variant="pro">PRO</Badge>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {[
-                { coin: "KAS", type: "BUY", confidence: 92, time: "2 hours ago" },
-                { coin: "NACHO", type: "SELL", confidence: 88, time: "5 hours ago" },
-                { coin: "ZEAL", type: "BUY", confidence: 85, time: "1 day ago" },
-              ].map((signal, i) => (
-                <div key={i} className="flex items-center justify-between p-4 bg-neutral-50 dark:bg-neutral-800 rounded-lg">
-                  <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm ${signal.type === 'BUY' ? 'bg-success-light text-success-dark' : 'bg-error-light text-error-dark'}`}>
-                      {signal.coin}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-neutral-900 dark:text-white">
-                        {signal.type}
-                      </p>
-                      <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                        {signal.time}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-semibold text-neutral-900 dark:text-white">
-                      {signal.confidence}%
-                    </p>
-                    <p className="text-xs text-neutral-600 dark:text-neutral-400">
-                      Confidence
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <Button variant="outline" fullWidth className="mt-4">
-              View All Signals
-            </Button>
-          </CardContent>
-        </Card>
-
-        {/* Platform News */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Platform Updates</CardTitle>
-            <CardDescription>Latest news and announcements</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex gap-3 p-4 bg-brand-light dark:bg-brand-dark/20 rounded-lg">
-                <div className="flex-shrink-0 w-2 bg-brand-primary rounded-full" />
-                <div>
-                  <p className="font-semibold text-neutral-900 dark:text-white mb-1">
-                    New AI Model Integration
-                  </p>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                    Claude 4.5 Sonnet and Gemini Pro 3 are now live for dual-AI validation
-                  </p>
-                  <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
-                    Today at 10:30 AM
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-3 p-4 bg-success-light/20 dark:bg-success-dark/10 rounded-lg">
-                <div className="flex-shrink-0 w-2 bg-success rounded-full" />
-                <div>
-                  <p className="font-semibold text-neutral-900 dark:text-white mb-1">
-                    Portfolio Generator Beta
-                  </p>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                    Pro users can now access the AI-powered portfolio generator
-                  </p>
-                  <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
-                    Yesterday at 2:15 PM
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-3 p-4 bg-info-light/20 dark:bg-info-dark/10 rounded-lg">
-                <div className="flex-shrink-0 w-2 bg-info rounded-full" />
-                <div>
-                  <p className="font-semibold text-neutral-900 dark:text-white mb-1">
-                    New KRC-20 Tokens Added
-                  </p>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                    15 new tokens are now tracked in the ecosystem
-                  </p>
-                  <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
-                    2 days ago
-                  </p>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Quick Actions */}
+      {/* Was ist KASPA-NEXUS? */}
       <Card>
         <CardHeader>
-          <CardTitle>Quick Actions</CardTitle>
-          <CardDescription>Get started with these features</CardDescription>
+          <CardTitle className="text-2xl">Was ist KASPA-NEXUS?</CardTitle>
+        </CardHeader>
+        <CardContent className="prose dark:prose-invert max-w-none">
+          <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-4">
+            KASPA-NEXUS ist die <strong>zentrale Datenplattform</strong> für das Kaspa KRC-20 Ökosystem.
+            Wir bieten hochwertige Marktdaten, AI-gestützte Trading-Signale und Portfolio-Management
+            für professionelle Trader und Investoren.
+          </p>
+          <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            Mit <strong>Dual-AI Validierung</strong> (Claude 4.5 Sonnet + Gemini Pro 3) garantieren wir
+            höchste Signal-Qualität. Alle unsere AI-Signale werden von beiden AI-Modellen analysiert –
+            nur bei Übereinstimmung wird ein Signal erstellt.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Mission & Vision */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <Card className="bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 dark:from-brand-primary/5 dark:to-brand-secondary/5 border-brand-primary/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <span className="text-2xl">🎯</span>
+              Unsere Mission
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
+              Das <strong>Kaspa-Netzwerk bekannter machen</strong> und jedem Zugang zu professionellen
+              Trading-Tools zu ermöglichen. Faire Preise ohne Scam – Qualität über Quantität.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 dark:from-purple-500/5 dark:to-pink-500/5 border-purple-500/30">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <span className="text-2xl">🚀</span>
+              Unsere Vision
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
+              Die <strong>führende Plattform</strong> für das Kaspa KRC-20 Ökosystem werden.
+              Community First Approach – jeder soll sich gut aufgehoben fühlen und Zugang zu
+              enterprise-grade Tools haben.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Platform Features Übersicht */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-2xl">Platform Features</CardTitle>
+          <CardDescription>Was KASPA-NEXUS einzigartig macht</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Feature 1 */}
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-primary/20 rounded-xl flex items-center justify-center text-2xl">
+                🤖
+              </div>
+              <div>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
+                  Dual-AI Validation
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Claude 4.5 Sonnet + Gemini Pro 3 analysieren jeden Trade – höchste Qualität garantiert
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-success/20 rounded-xl flex items-center justify-center text-2xl">
+                📊
+              </div>
+              <div>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
+                  Live Marktdaten
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Alle KRC-20 Tokens tracked in Echtzeit via kas.fyi + CoinGecko API
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-warning/20 rounded-xl flex items-center justify-center text-2xl">
+                💼
+              </div>
+              <div>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
+                  Portfolio Generator
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  AI-basierte Portfolios mit Risiko-Anpassung und Rebalancing-Strategie
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-info/20 rounded-xl flex items-center justify-center text-2xl">
+                🌐
+              </div>
+              <div>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
+                  Komplettes Ecosystem
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Coins, DEX, NFTs, Gaming, Infrastructure – alles an einem Ort
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-2xl">
+                💬
+              </div>
+              <div>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
+                  Community Chat
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Coin-spezifische Räume, Moderatoren, Anti-Spam Protection
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-2xl">
+                ⭐
+              </div>
+              <div>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
+                  Fair Pricing
+                </h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Free Tier für alle, Pro nur $9.99/Monat – kein Scam, volle Transparenz
+                </p>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Live Statistiken */}
+      <div>
+        <h2 className="text-2xl font-bold text-neutral-900 dark:text-white mb-4">
+          Live Statistiken
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card hover>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                    Total Users
+                  </p>
+                  <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
+                    1,234
+                  </p>
+                  <p className="text-xs text-success mt-1">+12.5% from last month</p>
+                </div>
+                <div className="p-3 bg-brand-light dark:bg-brand-dark/20 rounded-full">
+                  <svg className="w-6 h-6 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card hover>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                    Signals Today
+                  </p>
+                  <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
+                    5
+                  </p>
+                  <p className="text-xs text-info mt-1">42 active total</p>
+                </div>
+                <div className="p-3 bg-success-light dark:bg-success-dark/20 rounded-full">
+                  <svg className="w-6 h-6 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card hover>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                    Win Rate
+                  </p>
+                  <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
+                    87.3%
+                  </p>
+                  <p className="text-xs text-success mt-1">Above 80% target</p>
+                </div>
+                <div className="p-3 bg-warning-light dark:bg-warning-dark/20 rounded-full">
+                  <svg className="w-6 h-6 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card hover>
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                    KRC-20 Tokens
+                  </p>
+                  <p className="text-2xl font-bold text-neutral-900 dark:text-white mt-2">
+                    156
+                  </p>
+                  <p className="text-xs text-info mt-1">Tracked live</p>
+                </div>
+                <div className="p-3 bg-info-light dark:bg-info-dark/20 rounded-full">
+                  <svg className="w-6 h-6 text-info" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      {/* News Flash: Platform Updates */}
+      <Card>
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">📢</span>
+            <div>
+              <CardTitle>News Flash: Platform Updates</CardTitle>
+              <CardDescription>Latest announcements and improvements</CardDescription>
+            </div>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4">
+            <div className="flex gap-3 p-4 bg-brand-light dark:bg-brand-dark/20 rounded-lg border-l-4 border-brand-primary">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <Badge variant="default" size="sm">HIGH</Badge>
+                  <p className="font-semibold text-neutral-900 dark:text-white">
+                    New AI Model Integration
+                  </p>
+                </div>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Claude 4.5 Sonnet and Gemini Pro 3 are now live for dual-AI validation.
+                  Signal quality improved significantly!
+                </p>
+                <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
+                  Today at 10:30 AM
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 p-4 bg-success-light/20 dark:bg-success-dark/10 rounded-lg border-l-4 border-success">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <Badge variant="success" size="sm">NEW</Badge>
+                  <p className="font-semibold text-neutral-900 dark:text-white">
+                    Portfolio Generator Beta
+                  </p>
+                </div>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Pro users can now access the AI-powered portfolio generator with risk adjustment!
+                </p>
+                <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
+                  Yesterday at 2:15 PM
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 p-4 bg-info-light/20 dark:bg-info-dark/10 rounded-lg border-l-4 border-info">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <Badge variant="default" size="sm">UPDATE</Badge>
+                  <p className="font-semibold text-neutral-900 dark:text-white">
+                    15 New KRC-20 Tokens Added
+                  </p>
+                </div>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                  Ecosystem expanded with new tokens now tracked in real-time
+                </p>
+                <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
+                  2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Quick Links */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-2xl">Quick Links</CardTitle>
+          <CardDescription>Explore all features of KASPA-NEXUS</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Button variant="primary" size="lg" fullWidth>
               <span className="text-xl mr-2">🤖</span>
-              View AI Signals
+              AI Signals
             </Button>
             <Button variant="secondary" size="lg" fullWidth>
               <span className="text-xl mr-2">💼</span>
-              Generate Portfolio
+              Portfolio Generator
             </Button>
             <Button variant="outline" size="lg" fullWidth>
               <span className="text-xl mr-2">🪙</span>
-              Browse Tokens
+              Browse Ecosystem
+            </Button>
+            <Button variant="outline" size="lg" fullWidth>
+              <span className="text-xl mr-2">⭐</span>
+              Upgrade to Pro
             </Button>
           </div>
         </CardContent>
