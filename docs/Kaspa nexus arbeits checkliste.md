@@ -150,7 +150,13 @@
 
 &nbsp; - \[x] DeFi Detail Pages
 
-\- \[ ] NFT Page
+\- \[x] NFT Page
+
+&nbsp; - \[x] KRC-721 Standard
+
+&nbsp; - \[x] 6 NFT Collections
+
+&nbsp; - \[x] 5 Marketplaces
 
 \- \[ ] Gaming Page
 
@@ -416,7 +422,7 @@
 
 DESIGN      \[🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100% ✅ (v1.0.11)
 
-FRONTEND    \[🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜] 80% (6 Dashboards + Network + Coins + DeFi)
+FRONTEND    \[🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜] 90% (6 Dashboards + Network + Coins + DeFi + NFT)
 
 BACKEND     \[⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 0%
 

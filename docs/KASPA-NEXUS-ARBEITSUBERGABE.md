@@ -292,7 +292,7 @@ Team & Info         [✅] (/dashboard/team)
 ```
 Coins & Tokens      [✅] (/dashboard/ecosystem/coins + Detail Pages)
 DEX & DeFi          [✅] (/dashboard/ecosystem/defi + Detail Pages)
-NFT Projects        [ ] (geplant)
+NFT Projects        [✅] (/dashboard/ecosystem/nft - KRC-721 Standard)
 Gaming & Metaverse  [ ] (geplant)
 Infrastructure      [ ] (geplant)
 ```
@@ -394,12 +394,12 @@ Wenn Peter sagt:
 PROJEKT START:     21.11.2025
 AKTUELLER TAG:     Tag 2
 GEPLANTE DAUER:    10 Wochen
-FORTSCHRITT:       45%
+FORTSCHRITT:       50%
 
-[🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 45%
+[🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 50%
 
 FRONTEND DASHBOARDS:   6/6  ✅ (100%)
-ECOSYSTEM PAGES:       2/5  ✅ (40% - Coins + DeFi)
+ECOSYSTEM PAGES:       3/5  ✅ (60% - Coins + DeFi + NFT)
 FUNKTIONALE FEATURES:  0/10 (0%)
 BACKEND INTEGRATION:   0/5  (0%)
 ```
