@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 export default function MainDashboard() {
   return (
     <div className="space-y-8">
-      {/* Hero Banner */}
+      {/* Hero Banner - No text overlay (banner has text) */}
       <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
         <Image
           src="/images/Kaspa-Nexus-Banner.png"
@@ -16,15 +16,6 @@ export default function MainDashboard() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-        <div className="absolute bottom-8 left-8 right-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">
-            KASPA-NEXUS 3.0
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90">
-            Your Gateway to the Kaspa KRC-20 Ecosystem
-          </p>
-        </div>
       </div>
 
       {/* What is KASPA-NEXUS? */}
