@@ -3,19 +3,30 @@
 @tailwind utilities;
 
 :root {
+  /* Light Mode - Kaspa Nexus Theme */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0A1525;
+  --primary: #00D4D4; /* Cyan from logo */
+  --secondary: #E91E8C; /* Magenta from logo */
+  --accent: #4A90E2; /* Blue from logo */
+  --muted: #F0FDFD; /* Light cyan tint */
+  --border: #C4F5F5; /* Light cyan border */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  /* Dark Mode - Kaspa Nexus Theme */
+  --background: #0A1525; /* Deep dark blue */
+  --foreground: #F0FDFD;
+  --primary: #00D4D4; /* Cyan stays bright */
+  --secondary: #E91E8C; /* Magenta stays bright */
+  --accent: #4A90E2; /* Blue */
+  --muted: #1a2942; /* Darker blue-gray */
+  --border: #2a3f5f; /* Dark blue border */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-geist-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
