@@ -18,7 +18,7 @@ const navigationSections: NavSection[] = [
     items: [
       { label: "Kaspa-Nexus (Main)", href: "/dashboard/main", icon: "🏠" },
       { label: "KRC-20 Netzwerk", href: "/dashboard/krc20", icon: "🌐" },
-      { label: "Signal Dashboard", href: "/dashboard/signal", icon: "📈", badge: "pro" },
+      { label: "Signal Dashboard", href: "/dashboard/signal", icon: "📈" },
       { label: "Investment Hub", href: "/dashboard/investment", icon: "💰" },
     ],
   },
@@ -49,8 +49,8 @@ const navigationSections: NavSection[] = [
     icon: "💰",
     collapsed: false,
     items: [
-      { label: "Portfolio Vorschlag", href: "/investment/portfolio", icon: "💼" },
-      { label: "Zukunfts-Rechner", href: "/investment/calculator", icon: "🧮" },
+      { label: "Portfolio Vorschlag", href: "/investment/portfolio", icon: "💼", badge: "pro" },
+      { label: "Zukunfts-Rechner", href: "/investment/calculator", icon: "🧮", badge: "pro" },
     ],
   },
   {

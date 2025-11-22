@@ -56,9 +56,9 @@ export const NavigationSection: React.FC<NavigationSectionProps> = ({
         </svg>
       </button>
 
-      {/* Section Items */}
+      {/* Section Items - Better Visual Grouping */}
       {isExpanded && (
-        <div className="space-y-1">
+        <div className="ml-2 pl-3 border-l-2 border-neutral-200 dark:border-neutral-700 space-y-1 py-1">
           {section.items.map((item) => (
             <NavigationItem key={item.href} item={item} />
           ))}
