@@ -1,4 +1,4 @@
-// v1.0.11 - KRC-20 Network Dashboard with KASPA Live Price
+// v1.1.0 - KRC-20 Network Dashboard with Enterprise Network Statistics
 "use client";
 
 import { useState, useEffect } from "react";
@@ -7,6 +7,8 @@ import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { NetworkStatsCard } from "@/components/kaspa/NetworkStatsCard";
+import { EmissionScheduleChart } from "@/components/kaspa/EmissionScheduleChart";
 
 interface KaspaData {
   price: number;
@@ -142,6 +144,12 @@ export default function KRC20Dashboard() {
           ) : null}
         </CardContent>
       </Card>
+
+      {/* Enterprise Network Statistics */}
+      <NetworkStatsCard />
+
+      {/* Emission Schedule Visualization */}
+      <EmissionScheduleChart />
 
       {/* What is KRC-20 Network? */}
       <Card>
