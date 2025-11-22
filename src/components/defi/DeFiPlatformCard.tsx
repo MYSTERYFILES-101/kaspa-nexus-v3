@@ -1,6 +1,7 @@
-// v1.0.1 - DeFi Platform Card Component
+// v1.0.2 - DeFi Platform Card Component with Link to Detail Page
 "use client";
 
+import Link from "next/link";
 import { DeFiPlatform } from "@/types/defi";
 
 interface DeFiPlatformCardProps {
@@ -52,7 +53,10 @@ export function DeFiPlatformCard({ platform }: DeFiPlatformCardProps) {
   };
 
   return (
-    <div className="group relative bg-white dark:bg-neutral-800 rounded-xl border-2 border-neutral-200 dark:border-neutral-700 hover:border-brand-primary dark:hover:border-brand-primary transition-all duration-200 cursor-pointer overflow-hidden">
+    <Link
+      href={`/dashboard/ecosystem/defi/${platform.id}`}
+      className="group relative bg-white dark:bg-neutral-800 rounded-xl border-2 border-neutral-200 dark:border-neutral-700 hover:border-brand-primary dark:hover:border-brand-primary transition-all duration-200 cursor-pointer overflow-hidden block"
+    >
       {/* Hover Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-brand-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
 
@@ -191,6 +195,6 @@ export function DeFiPlatformCard({ platform }: DeFiPlatformCardProps) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
