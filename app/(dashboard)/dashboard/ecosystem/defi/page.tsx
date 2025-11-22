@@ -1,4 +1,4 @@
-// v1.0.6 - DEX & DeFi Platforms Page with Local Logos
+// v1.0.7 - DEX & DeFi Platforms Page with Fallback Logos
 "use client";
 
 import { useState, useMemo } from "react";
@@ -13,7 +13,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "kaspacom",
       name: "KaspaCom",
-      logo: "/images/defi/kaspacom.png",
+      logo: null,
       description: "The #1 leading DeFi platform on Kaspa, built by the community. Features DEX swaps, lending & borrowing, token launchpad (LFG.KASPA), NFT marketplace, KNS domains, and Web Wallet.",
       category: "All-in-One",
       features: [
@@ -37,7 +37,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "chainge",
       name: "Chainge DEX",
-      logo: "/images/defi/chainge.png",
+      logo: null,
       description: "Decentralized exchange service for the KRC20 ecosystem with liquidity pools hosted on KRC20 and LP tokens native to Kaspa. Supports stablecoins and mainstream assets.",
       category: "DEX",
       features: [
@@ -59,7 +59,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "zealousswap",
       name: "Zealous Swap",
-      logo: "/images/defi/zealousswap.png",
+      logo: null,
       description: "First automated market maker (AMM) DEX on Kaspa blockchain bringing DeFi capabilities like token swaps and liquidity pools.",
       category: "DEX",
       features: [
@@ -81,7 +81,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "kaspacat",
       name: "KaspaCat DEX",
-      logo: "/images/defi/kaspacat.png",
+      logo: null,
       description: "Decentralized exchange tailored for the Kaspa ecosystem. Any KRC-20 token can be listed without high fees or liquidity requirements, making it accessible for all projects.",
       category: "DEX",
       features: [
