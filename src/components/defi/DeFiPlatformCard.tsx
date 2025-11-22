@@ -1,7 +1,7 @@
-// v1.0.2 - DeFi Platform Card Component with Link to Detail Page
+// v1.0.3 - DeFi Platform Card Component (Fixed Hydration Error)
 "use client";
 
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { DeFiPlatform } from "@/types/defi";
 
 interface DeFiPlatformCardProps {
@@ -9,6 +9,12 @@ interface DeFiPlatformCardProps {
 }
 
 export function DeFiPlatformCard({ platform }: DeFiPlatformCardProps) {
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/dashboard/ecosystem/defi/${platform.id}`);
+  };
+
   const formatTVL = (tvl?: number) => {
     if (!tvl) return "N/A";
     if (tvl >= 1e9) return `$${(tvl / 1e9).toFixed(2)}B`;
@@ -53,9 +59,9 @@ export function DeFiPlatformCard({ platform }: DeFiPlatformCardProps) {
   };
 
   return (
-    <Link
-      href={`/dashboard/ecosystem/defi/${platform.id}`}
-      className="group relative bg-white dark:bg-neutral-800 rounded-xl border-2 border-neutral-200 dark:border-neutral-700 hover:border-brand-primary dark:hover:border-brand-primary transition-all duration-200 cursor-pointer overflow-hidden block"
+    <div
+      onClick={handleCardClick}
+      className="group relative bg-white dark:bg-neutral-800 rounded-xl border-2 border-neutral-200 dark:border-neutral-700 hover:border-brand-primary dark:hover:border-brand-primary transition-all duration-200 cursor-pointer overflow-hidden"
     >
       {/* Hover Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-brand-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -195,6 +201,6 @@ export function DeFiPlatformCard({ platform }: DeFiPlatformCardProps) {
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
