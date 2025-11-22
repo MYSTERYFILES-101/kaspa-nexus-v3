@@ -1,4 +1,4 @@
-// v1.0.4 - DEX & DeFi Platforms Page (Only Trading Platforms)
+// v1.0.5 - DEX & DeFi Platforms Page with Logos
 "use client";
 
 import { useState, useMemo } from "react";
@@ -13,7 +13,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "kaspacom",
       name: "KaspaCom",
-      logo: null,
+      logo: "https://pbs.twimg.com/profile_images/1846575775967629312/EY9lkNiI_400x400.jpg",
       description: "The #1 leading DeFi platform on Kaspa, built by the community. Features DEX swaps, lending & borrowing, token launchpad (LFG.KASPA), NFT marketplace, KNS domains, and Web Wallet.",
       category: "All-in-One",
       features: [
@@ -37,7 +37,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "chainge",
       name: "Chainge DEX",
-      logo: null,
+      logo: "https://pbs.twimg.com/profile_images/1679478855527313410/59AzJPbE_400x400.jpg",
       description: "Decentralized exchange service for the KRC20 ecosystem with liquidity pools hosted on KRC20 and LP tokens native to Kaspa. Supports stablecoins and mainstream assets.",
       category: "DEX",
       features: [
@@ -49,8 +49,8 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
       ],
       tvl: undefined,
       website: "https://chainge.finance",
-      twitter: null,
-      telegram: null,
+      twitter: "https://x.com/Chainge_Finance",
+      telegram: "https://t.me/chainge_finance",
       discord: null,
       github: null,
       status: "live",
@@ -59,7 +59,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "zealousswap",
       name: "Zealous Swap",
-      logo: null,
+      logo: "https://pbs.twimg.com/profile_images/1888618999093047296/hOi0gu4f_400x400.jpg",
       description: "First automated market maker (AMM) DEX on Kaspa blockchain bringing DeFi capabilities like token swaps and liquidity pools.",
       category: "DEX",
       features: [
@@ -81,7 +81,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "kaspacat",
       name: "KaspaCat DEX",
-      logo: null,
+      logo: "https://pbs.twimg.com/profile_images/1886042730942160896/BFMNuQl6_400x400.jpg",
       description: "Decentralized exchange tailored for the Kaspa ecosystem. Any KRC-20 token can be listed without high fees or liquidity requirements, making it accessible for all projects.",
       category: "DEX",
       features: [
@@ -91,8 +91,8 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
         "Community Driven"
       ],
       tvl: undefined,
-      website: null,
-      twitter: null,
+      website: "https://kaspacat.com",
+      twitter: "https://x.com/kaspa_cat",
       telegram: null,
       discord: null,
       github: null,
