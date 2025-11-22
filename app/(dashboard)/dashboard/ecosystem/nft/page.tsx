@@ -161,33 +161,27 @@ const NFT_PROJECTS: NFTProject[] = [
 const NFT_MARKETPLACES = [
   {
     name: "KaspaCom",
-    description: "Leading all-in-one platform with integrated NFT marketplace",
-    url: "https://kaspa.com",
-    features: ["Trading", "Minting", "Auctions", "Collections"],
+    description: "#1 all-in-one DeFi platform with NFT marketplace, trait filtering, and floor price sorting",
+    url: "https://kaspa.com/nft/marketplace",
+    features: ["Trait Filtering", "Buy/Sell", "Minting", "Rank Sorting"],
   },
   {
     name: "KaspaBox",
-    description: "Dedicated NFT marketplace with advanced filtering and discovery",
-    url: "https://kaspabox.io",
-    features: ["Buy/Sell", "Rarity Tools", "Analytics"],
+    description: "Premier KRC-721 NFT marketplace on Kaspa's lightning-fast blockchain with minimal fees",
+    url: "https://www.kaspabox.fyi",
+    features: ["Instant Trades", "Low Fees", "Collections", "Discovery"],
   },
   {
     name: "KSPR Bot",
-    description: "Telegram-based NFT trading bot for instant transactions",
-    url: "https://t.me/kspr_bot",
-    features: ["Telegram Trading", "Instant Swaps", "Mobile-First"],
+    description: "Telegram bot for KRC-721 NFTs with mobile-first trading and easy wallet management",
+    url: "https://t.me/kspr_1_bot",
+    features: ["Telegram Trading", "Mobile-First", "NFT Market", "KRC20 Support"],
   },
   {
-    name: "AstroArt",
-    description: "Curated art-focused NFT platform for premium collections",
-    url: "https://astroart.kaspa.art",
-    features: ["Curated Art", "Gallery Mode", "Artist Focus"],
-  },
-  {
-    name: "Kaspa NFT Exchange",
-    description: "Advanced NFT exchange with professional trading tools",
-    url: "https://nft.kaspa.exchange",
-    features: ["Pro Tools", "Advanced Orders", "API Access"],
+    name: "Kaspa NFT Exchange (KNFT)",
+    description: "NFT marketplace powered by Kaspa's BlockDAG technology for fast, secure transactions",
+    url: "https://www.kaspaex.com",
+    features: ["BlockDAG Tech", "Low Costs", "Fast Trades", "Secure"],
   },
 ];
 
