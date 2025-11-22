@@ -1,4 +1,4 @@
-// v1.0.6 - Sidebar Navigation Component (Visual Grouping + PRO Badge Fixes)
+// v1.0.9 - Sidebar Navigation Component (Visual Grouping + PRO Badge Fixes)
 "use client";
 
 import React, { useState } from "react";
@@ -159,7 +159,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {!collapsed && (
         <div className="px-4 pb-4 pt-2">
           <div className="text-center text-2xs text-neutral-500 dark:text-neutral-500">
-            Version 1.0.6 • <span className="text-brand-primary font-semibold">Development</span>
+            Version 1.0.9 • <span className="text-brand-primary font-semibold">Development</span>
           </div>
         </div>
       )}
