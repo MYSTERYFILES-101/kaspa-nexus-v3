@@ -1,4 +1,4 @@
-// v1.0.7 - Main Dashboard Page - Complete Redesign
+// v1.0.8 - Main Dashboard Page - English + Bigger Banner + No AI Model Details
 import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -8,7 +8,7 @@ export default function MainDashboard() {
   return (
     <div className="space-y-8">
       {/* Hero Banner */}
-      <div className="relative w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+      <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
         <Image
           src="/images/Kaspa-Nexus-Banner.png"
           alt="KASPA-NEXUS 3.0"
@@ -18,30 +18,30 @@ export default function MainDashboard() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="absolute bottom-8 left-8 right-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">
             KASPA-NEXUS 3.0
           </h1>
-          <p className="text-xl text-white/90">
+          <p className="text-xl md:text-2xl text-white/90">
             Your Gateway to the Kaspa KRC-20 Ecosystem
           </p>
         </div>
       </div>
 
-      {/* Was ist KASPA-NEXUS? */}
+      {/* What is KASPA-NEXUS? */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl">Was ist KASPA-NEXUS?</CardTitle>
+          <CardTitle className="text-2xl">What is KASPA-NEXUS?</CardTitle>
         </CardHeader>
         <CardContent className="prose dark:prose-invert max-w-none">
           <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-4">
-            KASPA-NEXUS ist die <strong>zentrale Datenplattform</strong> für das Kaspa KRC-20 Ökosystem.
-            Wir bieten hochwertige Marktdaten, AI-gestützte Trading-Signale und Portfolio-Management
-            für professionelle Trader und Investoren.
+            KASPA-NEXUS is the <strong>central data platform</strong> for the Kaspa KRC-20 ecosystem.
+            We provide high-quality market data, AI-powered trading signals, and portfolio management
+            for professional traders and investors.
           </p>
           <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
-            Mit <strong>Dual-AI Validierung</strong> (Claude 4.5 Sonnet + Gemini Pro 3) garantieren wir
-            höchste Signal-Qualität. Alle unsere AI-Signale werden von beiden AI-Modellen analysiert –
-            nur bei Übereinstimmung wird ein Signal erstellt.
+            With <strong>Dual-AI Validation</strong>, we guarantee the highest signal quality.
+            All our AI signals are analyzed by advanced AI tools – a signal is only created when
+            both models agree.
           </p>
         </CardContent>
       </Card>
@@ -52,13 +52,13 @@ export default function MainDashboard() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span className="text-2xl">🎯</span>
-              Unsere Mission
+              Our Mission
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
-              Das <strong>Kaspa-Netzwerk bekannter machen</strong> und jedem Zugang zu professionellen
-              Trading-Tools zu ermöglichen. Faire Preise ohne Scam – Qualität über Quantität.
+              Make the <strong>Kaspa network more popular</strong> and provide everyone access to professional
+              trading tools. Fair prices without scams – quality over quantity.
             </p>
           </CardContent>
         </Card>
@@ -67,24 +67,24 @@ export default function MainDashboard() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <span className="text-2xl">🚀</span>
-              Unsere Vision
+              Our Vision
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
-              Die <strong>führende Plattform</strong> für das Kaspa KRC-20 Ökosystem werden.
-              Community First Approach – jeder soll sich gut aufgehoben fühlen und Zugang zu
-              enterprise-grade Tools haben.
+              Become the <strong>leading platform</strong> for the Kaspa KRC-20 ecosystem.
+              Community First Approach – everyone should feel welcome and have access to
+              enterprise-grade tools.
             </p>
           </CardContent>
         </Card>
       </div>
 
-      {/* Platform Features Übersicht */}
+      {/* Platform Features Overview */}
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl">Platform Features</CardTitle>
-          <CardDescription>Was KASPA-NEXUS einzigartig macht</CardDescription>
+          <CardDescription>What makes KASPA-NEXUS unique</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -98,7 +98,7 @@ export default function MainDashboard() {
                   Dual-AI Validation
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Claude 4.5 Sonnet + Gemini Pro 3 analysieren jeden Trade – höchste Qualität garantiert
+                  Every trade analyzed by advanced AI tools – highest quality guaranteed
                 </p>
               </div>
             </div>
@@ -110,10 +110,10 @@ export default function MainDashboard() {
               </div>
               <div>
                 <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
-                  Live Marktdaten
+                  Live Market Data
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Alle KRC-20 Tokens tracked in Echtzeit via kas.fyi + CoinGecko API
+                  All KRC-20 tokens tracked in real-time via kas.fyi + CoinGecko API
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function MainDashboard() {
                   Portfolio Generator
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  AI-basierte Portfolios mit Risiko-Anpassung und Rebalancing-Strategie
+                  AI-powered portfolios with risk adjustment and rebalancing strategy
                 </p>
               </div>
             </div>
@@ -140,10 +140,10 @@ export default function MainDashboard() {
               </div>
               <div>
                 <h3 className="font-bold text-neutral-900 dark:text-white mb-1">
-                  Komplettes Ecosystem
+                  Complete Ecosystem
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Coins, DEX, NFTs, Gaming, Infrastructure – alles an einem Ort
+                  Coins, DEX, NFTs, Gaming, Infrastructure – everything in one place
                 </p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function MainDashboard() {
                   Community Chat
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Coin-spezifische Räume, Moderatoren, Anti-Spam Protection
+                  Coin-specific rooms, moderators, anti-spam protection
                 </p>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function MainDashboard() {
                   Fair Pricing
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Free Tier für alle, Pro nur $9.99/Monat – kein Scam, volle Transparenz
+                  Free tier for everyone, Pro only $9.99/month – no scams, full transparency
                 </p>
               </div>
             </div>
@@ -181,10 +181,10 @@ export default function MainDashboard() {
         </CardContent>
       </Card>
 
-      {/* Live Statistiken */}
+      {/* Live Statistics */}
       <div>
         <h2 className="text-2xl font-bold text-neutral-900 dark:text-white mb-4">
-          Live Statistiken
+          Live Statistics
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Card hover>
@@ -291,11 +291,11 @@ export default function MainDashboard() {
                 <div className="flex items-center gap-2 mb-1">
                   <Badge variant="default" size="sm">HIGH</Badge>
                   <p className="font-semibold text-neutral-900 dark:text-white">
-                    New AI Model Integration
+                    New AI Tools Integration
                   </p>
                 </div>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  Claude 4.5 Sonnet and Gemini Pro 3 are now live for dual-AI validation.
+                  Advanced AI tools are now live for dual-AI validation.
                   Signal quality improved significantly!
                 </p>
                 <p className="text-xs text-neutral-500 dark:text-neutral-500 mt-2">
