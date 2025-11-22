@@ -14,7 +14,7 @@ const navigationSections: NavSection[] = [
   {
     title: "Dashboard",
     icon: "📊",
-    collapsed: false,
+    collapsed: false, // Oberste bleibt offen
     items: [
       { label: "Kaspa-Nexus (Main)", href: "/dashboard/main", icon: "🏠" },
       { label: "KRC-20 Netzwerk", href: "/dashboard/krc20", icon: "🌐" },
@@ -25,7 +25,7 @@ const navigationSections: NavSection[] = [
   {
     title: "Ecosystem",
     icon: "🌐",
-    collapsed: false,
+    collapsed: true, // Beim Laden geschlossen
     items: [
       { label: "Coins & Tokens", href: "/ecosystem/coins", icon: "🪙" },
       { label: "DEX & DeFi", href: "/ecosystem/defi", icon: "🔄" },
@@ -37,7 +37,7 @@ const navigationSections: NavSection[] = [
   {
     title: "Signal Dashboard",
     icon: "📈",
-    collapsed: false,
+    collapsed: true, // Beim Laden geschlossen
     items: [
       { label: "AI Signals", href: "/signals/ai-signals", icon: "🤖", badge: "pro" },
       { label: "Signal Analytics", href: "/signals/analytics", icon: "📊", badge: "pro" },
@@ -46,7 +46,7 @@ const navigationSections: NavSection[] = [
   {
     title: "Investment Hub",
     icon: "💰",
-    collapsed: false,
+    collapsed: true, // Beim Laden geschlossen
     items: [
       { label: "Portfolio Vorschlag", href: "/investment/portfolio", icon: "💼", badge: "pro" },
       { label: "Zukunfts-Rechner", href: "/investment/calculator", icon: "🧮", badge: "pro" },
@@ -55,7 +55,7 @@ const navigationSections: NavSection[] = [
   {
     title: "Account & Shop",
     icon: "🛒",
-    collapsed: false,
+    collapsed: true, // Beim Laden geschlossen
     items: [
       { label: "Signal Pro", href: "/account/pro", icon: "⭐", badge: "pro" },
       { label: "API Codes", href: "/account/api", icon: "🔑" },
@@ -64,7 +64,7 @@ const navigationSections: NavSection[] = [
   {
     title: "Team & Info",
     icon: "ℹ️",
-    collapsed: false,
+    collapsed: true, // Beim Laden geschlossen
     items: [
       { label: "Team", href: "/team", icon: "👥" },
       { label: "Sponsoren", href: "/team/sponsors", icon: "❤️" },
