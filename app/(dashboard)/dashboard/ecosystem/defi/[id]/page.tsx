@@ -1,4 +1,4 @@
-// v1.0.0 - DeFi Platform Detail Page
+// v1.1.0 - DeFi Platform Detail Page with Updated Descriptions
 "use client";
 
 import { use } from "react";
@@ -12,7 +12,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     id: "kaspacom",
     name: "KaspaCom",
     logo: "/images/defi/kaspacom.jpg",
-    description: "The #1 leading DeFi platform on Kaspa, built by the community. Features DEX swaps, lending & borrowing, token launchpad (LFG.KASPA), NFT marketplace, KNS domains, and Web Wallet.",
+    description: "Die führende DeFi-Plattform im Kaspa-Ökosystem. Vereint DEX, Lending & Borrowing, Token-Launchpad (LFG.KASPA), NFT-Marktplatz und KNS-Domains unter einer Oberfläche. Community-getrieben mit GameFi-Punktesystem zur Belohnung aktiver Nutzer. Gateway zum gesamten Kaspa Digital Economy.",
     category: "All-in-One",
     features: [
       "DEX Swaps",
@@ -36,7 +36,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     id: "chainge",
     name: "Chainge DEX",
     logo: "/images/defi/chainge.jpg",
-    description: "Decentralized exchange service for the KRC20 ecosystem with liquidity pools hosted on KRC20 and LP tokens native to Kaspa. Supports stablecoins and mainstream assets.",
+    description: "Cross-chain DEX-Aggregator mit über 60+ integrierten Blockchains. Ermöglicht KRC-20 Token-Swaps mit optimaler Liquidität durch Multi-Chain-Routing. Nutzt Fusion DCRM-Technologie für sichere, nicht-custodiale Transaktionen. Bietet Spot-, Futures- und Options-Trading in einem All-in-One DeFi Hub.",
     category: "DEX",
     features: [
       "KRC20 Trading",
@@ -58,7 +58,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     id: "zealousswap",
     name: "Zealous Swap",
     logo: "/images/defi/zealousswap.jpg",
-    description: "First automated market maker (AMM) DEX on Kaspa blockchain bringing DeFi capabilities like token swaps and liquidity pools.",
+    description: "Erster Automated Market Maker (AMM) DEX auf der Kaspa-Blockchain. Bringt DeFi-Funktionen wie Token-Swaps, Liquidity Pools und Yield-Farming direkt auf Kaspa Layer-1. Nutzt Kaspas blockDAG-Architektur für blitzschnelle Transaktionen mit minimalen Gebühren. Fokus auf einfache UX für alle Nutzer.",
     category: "DEX",
     features: [
       "Token Swaps",
@@ -80,7 +80,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     id: "kaspacat",
     name: "KaspaCat DEX",
     logo: "/images/defi/kaspacat.jpg",
-    description: "Decentralized exchange tailored for the Kaspa ecosystem. Any KRC-20 token can be listed without high fees or liquidity requirements, making it accessible for all projects.",
+    description: "Community-fokussierter DEX für KRC-20 Token ohne Listing-Gebühren oder Liquiditätsbarrieren. Demokratisiert den Token-Zugang durch niedrige Entry-Barriers. Ziel: Jedem KRC-20 Projekt faire Trading-Möglichkeiten zu bieten. Status: In Development - Start für Q1 2025 geplant.",
     category: "DEX",
     features: [
       "KRC-20 Trading",
