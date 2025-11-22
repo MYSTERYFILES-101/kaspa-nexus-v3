@@ -290,8 +290,8 @@ Team & Info         [✅] (/dashboard/team)
 
 **Ecosystem Phase:**
 ```
-Coins & Tokens      [ ] (geplant)
-DEX & DeFi          [ ] (geplant)
+Coins & Tokens      [✅] (/dashboard/ecosystem/coins + Detail Pages)
+DEX & DeFi          [✅] (/dashboard/ecosystem/defi + Detail Pages)
 NFT Projects        [ ] (geplant)
 Gaming & Metaverse  [ ] (geplant)
 Infrastructure      [ ] (geplant)
@@ -394,12 +394,12 @@ Wenn Peter sagt:
 PROJEKT START:     21.11.2025
 AKTUELLER TAG:     Tag 2
 GEPLANTE DAUER:    10 Wochen
-FORTSCHRITT:       35%
+FORTSCHRITT:       45%
 
-[🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 35%
+[🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 45%
 
 FRONTEND DASHBOARDS:   6/6  ✅ (100%)
-ECOSYSTEM PAGES:       0/5  (0%)
+ECOSYSTEM PAGES:       2/5  ✅ (40% - Coins + DeFi)
 FUNKTIONALE FEATURES:  0/10 (0%)
 BACKEND INTEGRATION:   0/5  (0%)
 ```

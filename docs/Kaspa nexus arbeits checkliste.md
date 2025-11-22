@@ -132,19 +132,23 @@
 
 \### Coin Pages (Woche 3)
 
-\- \[ ] Coin Grid (Kacheln wie Screenshot)
+\- \[x] Coin Grid (Kacheln wie Screenshot)
 
-\- \[ ] Coin Card Component
+\- \[x] Coin Card Component
 
-\- \[ ] Coin Detail Page
+\- \[x] Coin Detail Page
 
-&nbsp; - \[ ] Chart Placeholder
+&nbsp; - \[x] Chart Placeholder
 
-&nbsp; - \[ ] Stats Layout
+&nbsp; - \[x] Stats Layout
 
-&nbsp; - \[ ] Exchange List
+&nbsp; - \[x] Exchange List
 
-\- \[ ] DEX \& DeFi Page
+\- \[x] DEX \& DeFi Page
+
+&nbsp; - \[x] DeFi Overview
+
+&nbsp; - \[x] DeFi Detail Pages
 
 \- \[ ] NFT Page
 
@@ -412,7 +416,7 @@
 
 DESIGN      \[🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100% ✅ (v1.0.11)
 
-FRONTEND    \[🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜] 60% (6 Dashboards + KRC20 Network Data)
+FRONTEND    \[🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜] 80% (6 Dashboards + Network + Coins + DeFi)
 
 BACKEND     \[⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 0%
 
