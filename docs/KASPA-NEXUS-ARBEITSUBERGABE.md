@@ -421,8 +421,22 @@ BACKEND INTEGRATION:   0/5  (0%)
 **WICHTIG FÜR CLAUDE:**
 Diese Datei ist die ZENTRALE ÜBERGABE. Bei jedem Start ERST diese Datei lesen, dann weitermachen. Nach jeder Session diese Datei updaten!
 
-**Letzte Bearbeitung:** 22.11.2025, 14:30 Uhr
-**Bearbeitet von:** Claude (Enterprise Network Dashboard + Emission Schedule)
-**Nächste Session:** Ecosystem Pages oder weitere Features laut Projektplan
-**Aktueller Status:** ✅ ALLE 6 DASHBOARDS + ENTERPRISE NETWORK STATISTICS LIVE & DEPLOYED
-**Git Commit:** 8056f5f - "Revert to kas.fyi API" (nach Kasplex Fehler)
+**Letzte Bearbeitung:** 22.11.2025, 23:50 Uhr
+**Bearbeitet von:** Claude (NFT Marketplace URL Korrekturen)
+**Nächste Session:** Gaming Page + Infrastructure Page (2/5 Ecosystem Pages noch offen)
+**Aktueller Status:** ✅ 6 DASHBOARDS + ENTERPRISE NETWORK + 3 ECOSYSTEM PAGES (Coins, DeFi, NFT) LIVE
+**Git Commit:** 99f4067 - "v1.0.16 - Fix NFT marketplace URLs"
+
+## 🔄 SESSION LOG - 22.11.2025 (Abend)
+
+**v1.0.16 - NFT Marketplace URL Korrekturen:**
+- ✅ NFT Page erstellt (/dashboard/ecosystem/nft) - 525 Zeilen
+- ✅ 6 NFT Collections (Nacho Kat, Yonatoshi, KONAN, KREX, MANTIS Notes, Kaspians)
+- ✅ KRC-721 Standard erklärt
+- ⚠️ kas.fyi API hat KEINE KRC-721/NFT Daten (nur KRC-20)
+- ✅ Marketplace URLs korrigiert:
+  - KaspaBox: kaspabox.io → www.kaspabox.fyi ✅
+  - Kaspa NFT Exchange: nft.kaspa.exchange → www.kaspaex.com ✅
+  - AstroArt entfernt (existiert nicht) ❌
+- ✅ 4 funktionierende Marketplaces verifiziert
+- ✅ Build + Deploy + GitHub Push erfolgreich

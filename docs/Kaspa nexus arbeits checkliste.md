@@ -498,7 +498,19 @@ LAUNCH      \[⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜] 0%
 
 \- ✅ kas.fyi API wiederhergestellt (156 kuratierte Tokens mit Metadaten)
 
-**Nächste Schritte:** Ecosystem Pages (Coins, DEX, NFT, Gaming, Infrastructure)
+**v1.0.16 - NFT Marketplace URL Korrekturen (22.11.2025 - 23:50)**
+
+\- ✅ NFT Page erstellt mit 6 Collections & KRC-721 Standard
+
+\- ✅ Marketplace URLs korrigiert (KaspaBox, Kaspa NFT Exchange)
+
+\- ❌ AstroArt Marketplace entfernt (existiert nicht)
+
+\- ⚠️ kas.fyi hat KEINE NFT Daten (nur KRC-20)
+
+\- ✅ 4 verifizierte Marketplaces live
+
+**Nächste Schritte:** Gaming Page + Infrastructure Page (2/5 Ecosystem noch offen)
 
 
 
