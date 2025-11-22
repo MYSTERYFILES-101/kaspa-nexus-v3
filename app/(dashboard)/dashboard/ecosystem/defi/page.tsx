@@ -1,4 +1,4 @@
-// v1.0.8 - DEX & DeFi Platforms Page with Real Logos
+// v1.0.9 - DEX & DeFi Platforms Page with Real Logos (KaspaCat JPG Fix)
 "use client";
 
 import { useState, useMemo } from "react";
@@ -81,7 +81,7 @@ const DEFI_PLATFORMS: DeFiPlatform[] = [
     {
       id: "kaspacat",
       name: "KaspaCat DEX",
-      logo: "/images/defi/kaspacat.png",
+      logo: "/images/defi/kaspacat.jpg",
       description: "Decentralized exchange tailored for the Kaspa ecosystem. Any KRC-20 token can be listed without high fees or liquidity requirements, making it accessible for all projects.",
       category: "DEX",
       features: [
